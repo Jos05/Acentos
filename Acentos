@@ -1,0 +1,16 @@
+function contarAcentos(frase) {
+    let contador = 0;
+    const acentos = ['á', 'é', 'í', 'ó', 'ú'];
+
+    for (let i = 0; i < frase.length; i++) {
+        if (acentos.includes(frase[i])) {
+            contador++;
+        }
+    }
+
+    return contador;
+}
+
+let frase = "Esta frase tiene acentos: á, é, í, ó, ú.";
+let numeroDeAcentos = contarAcentos(frase);
+console.log("Número de acentos:", numeroDeAcentos);
